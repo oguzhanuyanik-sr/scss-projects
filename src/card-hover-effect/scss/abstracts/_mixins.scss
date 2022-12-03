@@ -1,0 +1,13 @@
+@mixin flexCenter($col: false) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @if ($col) {
+        flex-direction: column;
+    }
+}
+
+@mixin size($height: 0, $width: 0) {
+    height: $height;
+    width: $width;
+}

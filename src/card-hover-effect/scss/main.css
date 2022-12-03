@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #151515;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Source Code Pro", monospace;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width : 700px) {
+  body {
+    margin-top: 125px;
+    margin-bottom: 125px;
+  }
+}
+.cards-container {
+  width: 530px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-inner {
+  transform: rotate(-5deg);
+  transition: all 150ms ease-in-out;
+  background-color: #202022;
+  width: 250px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  padding: 21px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width : 700px) {
+  .card-inner {
+    width: 250.1px;
+  }
+}
+.card-inner:hover {
+  z-index: 999;
+  transform: scale(1.15);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card-header-wrapper {
+  position: relative;
+}
+
+.card-header-wrapper::before {
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  box-shadow: inset 0 0 3px #bb86fc;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+.card-title {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8549019608);
+  margin-top: 15px;
+}
+
+.card-date {
+  color: #bb86fc;
+  font-size: 14px;
+}
+
+.card-description {
+  color: rgba(255, 255, 255, 0.8549019608);
+  margin-top: 22.5px;
+  margin-bottom: 15px;
+}/*# sourceMappingURL=main.css.map */
