@@ -1,0 +1,21 @@
+// Media Queries
+$sm: 'only screen and (max-width : 480px)';
+$md: 'only screen and (max-width : 700px)';
+$lg: 'only screen and (max-width : 1024px)';
+$xl: 'only screen and (max-width : 1200px)';
+
+// Fonts
+$source: 'Source Code Pro', monospace;
+
+// Colors
+$light: rgb(238, 238, 238);
+$soft: rgb(40, 44, 52);
+$dark: rgb(22, 20, 24);
+$purple: rgb(168, 158, 201);
+$pink: rgb(238, 131, 229);
+
+// Sizes
+$gap: 10px;
+
+// Shadows
+$softShadow: 0 7px 20px 5px rgba(0, 0, 0, 0.3);

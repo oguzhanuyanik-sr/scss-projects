@@ -1,0 +1,11 @@
+.bg-text {
+    color: $light;
+    font-size: 9vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: opacity(0.5);
+    user-select: none;
+    z-index: -50;
+}
